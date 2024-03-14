@@ -1,0 +1,4 @@
+- name: Sample roles
+  hosts: localhost
+  roles:
+    - tasks
