@@ -8,9 +8,9 @@
         msg: URL_PLAY - {{ URL_PLAY }}
     - name: print tasks variables
       ansible.builtin.debug:
-        msg: URL_TASKS - {{ URL_TASKS }}
         vars:
-          URL_TASKS: tasks.example.com
+          URL_TASK: tasks.example.com
+        msg: URL_TASK - {{ URL_TASK }}
 
 
 
