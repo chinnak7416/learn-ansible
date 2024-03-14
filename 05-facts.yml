@@ -1,5 +1,5 @@
 - name: demo on facts
-  hosts: local
+  hosts: localhost
   tasks:
     - name: print hostname using fact
       ansible.builtin.debug:
