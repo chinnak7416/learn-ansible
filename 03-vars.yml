@@ -17,6 +17,9 @@
 
 
 
-
+# By given direct command " -e URL_ROLE=try.example.com" is also directly work is calLed 'CLI' very high precedence only
 # play level variables can be access by all the tasks & roles
 # tasks level variables only access by the tasks
+#role level variable only access by the roles
+#IMP: In a variable the key value must and should in double quotes only
+#ex: msg: {{URL}} like this It should not  be, msg: "{{URL}}" like this only
