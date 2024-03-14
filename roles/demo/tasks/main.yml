@@ -3,3 +3,4 @@
     msg: Hello roles
 - name: print URL
   ansible.builtin.debug:
+    msg: URL_ROLE - {{ URL_ROLE }}
