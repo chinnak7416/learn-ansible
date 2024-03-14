@@ -1,4 +1,4 @@
-- name: Demo on Templates
+- name: Demo on Template
   hosts: localhost
   tasks:
     - name: copy example.conf
