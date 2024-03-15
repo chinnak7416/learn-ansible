@@ -11,8 +11,7 @@
         msg: URL_TASK - {{ URL_TASK }}
       vars:
           URL_TASK: tasks.example.com
-  roles:
-    - demo
+
 
 # store result of task, to OUTPUT variable
     - name: Demo
@@ -28,6 +27,8 @@
       ansible.builtin.debug:
         msg: "{{ OUTPUT.stdout }}"
 
+      roles:
+        - demo
 
 
 # By given direct command " -e URL_ROLE=try.example.com" is also directly work is calLed 'CLI' very high precedence only
