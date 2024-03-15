@@ -10,3 +10,4 @@
       ansible.builtin.debug:
         msg: fruits
       tags: fruits
+#ansible-playbook 07-tags.yml -t fruits
