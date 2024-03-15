@@ -14,6 +14,19 @@
   roles:
     - demo
 
+# store result of task, to OUTPUT variable
+    - name: Demo
+      ansible.builtin.shell: uptime
+      register: OUTPUT
+# retrive to OUTPUT VARIABLE
+    - name: Print OUTPUT of previous task
+      ansible.builtin.debug:
+        msg: "{{ OUTPUT }}"
+
+# Retrive OUTPUT using JSON QUERY
+    - name: Print OUTPUT of previous task with only OUTPUT of shell command
+      ansible.builtin.debug:
+        msg: "{{ OUTPUT.stdout }}"
 
 
 
