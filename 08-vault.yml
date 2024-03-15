@@ -16,3 +16,7 @@
         msg: PASSWORD - {{ PASSWORD }}
 
 
+# enter:ansible-vault
+# select: encrypt_string from above command output option as 'ansible-vault encrypt_string abcd@123' and enter pass:PASSWORD
+# after getting code put in ansible playbook and run the code by ansible-playbook 08-vaults.yml --help
+# select '-J' option and run command ansible-playbook 08-vaults.yml --ask-vault-password
