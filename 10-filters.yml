@@ -5,3 +5,7 @@
       ansible.builtin.debug:
         msg: Yes we need to install
       when: install | bool
+
+#ansible-playbook 10-filters.yml -e install=true this command is used to run filters must and should give install=true or false
+# without mention 'bool' then true or false taken as strings
+
