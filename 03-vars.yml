@@ -27,9 +27,8 @@
       ansible.builtin.debug:
         msg: "{{ OUTPUT.stdout }}"
 
-      roles:
-        - demo
-
+  roles:
+    - demo
 
 # By given direct command " -e URL_ROLE=try.example.com" is also directly work is calLed 'CLI' very high precedence only
 # play level variables can be access by all the tasks & roles
